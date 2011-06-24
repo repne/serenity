@@ -1,0 +1,12 @@
+application: uppify
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /deferred
+  login: admin
+  script: main.py
+
+- url: .*
+  script: main.py
